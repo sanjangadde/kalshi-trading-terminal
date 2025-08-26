@@ -13,7 +13,7 @@ from pipe_util import PipeWriter
 
 # Configuration
 KEY_ID = os.getenv("PROD_KEYID")
-PRIVATE_KEY_PATH = "key.pem"
+PRIVATE_KEY_PATH = os.getenv("PROD_KEYFILE")
 MARKET_TICKER = 'KXHIGHLAX-25AUG26-B75.5'.upper()  # Replace with any open market
 WS_URL = "wss://api.elections.kalshi.com/trade-api/ws/v2"
 
